@@ -1,4 +1,4 @@
-package com.kh.practice.chap2.loop;
+package com.kh.practice.chap02.loop;
 
 import java.util.Scanner;
 

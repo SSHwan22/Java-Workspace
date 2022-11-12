@@ -1,6 +1,6 @@
 package com.kh.practice.chap02.run;
 
-import com.kh.practice.chap2.loop.LoopPractice;
+import com.kh.practice.chap02.loop.LoopPractice;
 
 public class Run {
 
