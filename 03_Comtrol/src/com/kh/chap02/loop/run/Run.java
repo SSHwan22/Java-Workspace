@@ -1,23 +1,34 @@
 package com.kh.chap02.loop.run;
 
-import com.kh.chap02.loop.LoopPractice;
+import com.kh.chap02.loop.A_For;
 
 public class Run {
 
 	public static void main(String[] args) {
-		LoopPractice lp = new  LoopPractice();
+		A_For af = new A_For();
 		
-//		lp.practice1();
-//		lp.practice2();
-//		lp.practice3();
-//		lp.practice4();
-//		lp.practice5();
-//		lp.practice6();
-//		lp.practice8();
-//		lp.practice9();
-//		lp.practice10();
-//		lp.practice11();
-		lp.practice12();
+//		af.method1();
+//		af.method2();
+//		af.method3();
+//		af.method4();
+//		af.method5();
+//		af.method6();
+//		af.method8();
+//		af.method9();
+//		af.method10();
+//		af.method11();
+//		af.method12();
+//		af.method13();
+//		af.method14();
+		af.method15();
+//		af.method16();
+		
+		
+		
+		
+		
+		
+		
+		
 	}
-
 }
