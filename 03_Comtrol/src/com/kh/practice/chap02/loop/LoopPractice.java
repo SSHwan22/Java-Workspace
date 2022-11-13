@@ -48,11 +48,12 @@ public class LoopPractice {
 		
 		for(int i=1; i<=num; i++) {
 			result += i;
-			if(i==num) {
-				System.out.print(i);
+			if(i<num) {
+				System.out.print(i+"+");
 			}else {
-			System.out.print(i+"+");
+				System.out.print(i);
 			}
+			
 		}
 		System.out.println("="+result);
 	}
@@ -90,9 +91,12 @@ public class LoopPractice {
 		int dan = sc.nextInt();
 		
 		if(dan<=9) {	
-		for(; 9>=dan; dan++) {
+		for(int i= 1; i>=dan; i++) {
+			for(int j=1; j<=i; i++) {
 			System.out.println("===== "+dan+"단 =====");
+			System.out.println();
 			}
+		}
 		}else {
 			System.out.println("9 이하의 숫자만 입력하세요.\n");
 			practice5();
@@ -110,15 +114,10 @@ public class LoopPractice {
 		
 		for(int i=0; i<10; i++) {
 			System.out.print(num1 +" ");
-			if(false) {
-			num1+=num2;
-			}
-			else {
-				num1-=num2;
+			num1 += num2;
 			}
 		}
 		
-		}
 	public void practice8() {
 		Scanner sc = new Scanner(System.in);
 
@@ -201,10 +200,67 @@ public class LoopPractice {
 	}
 	
 	
-	public void practice13() {
+	public void practice16() {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
+		
+		for(int i=1; i<=num+(num-1); i++) {
+			if(i<=num) {
+			for(int j=1; j<=i; j++){
+				System.out.print("*");
+				}
+			}else {
+				for(int k=0; i+k<=num+(num-1); k++) {
+					System.out.print("*");
+				}
+				
+			}
+			System.out.println();
+		}
 	}
+	
+	
+	public void practice17() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		
+		for(int i=1; i<=num; i++) {
+			for(int j=1; j<=num; j++) {
+				if(i<=1 || i>=num) {
+				System.out.print("*");
+				}else if(j==1 || j==num) {
+					System.out.print("*");
+					}else {
+						System.out.print(" ");
+					}
+				}
+			System.out.println();
+		}
+	}
+	
+	
+//	public void practice18() {
+//		Scanner sc = new Scanner(System.in);
+//
+//		System.out.print("정수 입력 : ");
+//		int num = sc.nextInt();
+//		
+//		for(int i=0; i<num+(num-1); i++) {
+//			if(i<num) {
+//			for(int j=1; j<num-i;j++) {
+//				System.out.print(" ");
+//				}
+//			for(int k=0;k<i*2+1;k++) {
+//				System.out.print("*");
+//				}
+//			}else {
+//				for(int j=1;)
+//			}
+//			System.out.println();
+//		}
+//	}
 }
