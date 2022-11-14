@@ -62,4 +62,23 @@ public class A_Break {
 			}
 		}
 	}
+	
+	public void method4() {
+		for(int i=1; i<=10;i++) {
+			if(i%2==0) {
+				continue;
+			}
+			System.out.println(i+"  홀수");
+		}
+	}
+	
+	public void method5() {
+		for(int i=1;;i++) {
+			System.out.println(i+" 출력");
+			if(i>=10) {
+				break;	//for문에 조건식이 없기에 조건의 break 없으면 무한반복이 되고 
+						//break가 있으면 10이상 되면 break를 만나 for문을 종료한다.
+			}
+		}
+	}
 }
