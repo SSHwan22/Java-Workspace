@@ -98,7 +98,27 @@ public class ArrayPractice {
 	}
 	
 	public void practice8() {
-		System.out.println("정수 : ");
+		System.out.print("정수 : ");
+		int num = sc.nextInt();
+		
+		int[] numArr = new int[num];
+		if(num%2==1 && num>3) {
+			for(int i=0; i<=numArr.length/2;i++) {
+				numArr[i] = i+1;
+				System.out.print(numArr[i]+", ");
+			}
+			for(int i= num/2; i>0; i--) {
+				numArr[i]=i;
+				if(i==1) {
+					System.out.print(numArr[i]);
+				}else {
+					System.out.print(numArr[i]+", ");
+				}
+			}
+		}else {
+		System.out.println("다시 입력하세요.");
+		practice8();
+		}
 		
 	}
 	
@@ -111,12 +131,10 @@ public class ArrayPractice {
 		for(int i=0; i<menuArr.length; i++) {
 			if(menuArr[i].equals(menu)) {
 				System.out.println(menu+"배달 가능");
-				break;
-			}else {
-				System.out.println(menu+"은 없는 메뉴입니다.");
-				break;
+				return;
 			}
 		}
+		System.out.println(menu+"은 없는 메뉴입니다.");
+		}
 		
-	}
 }
