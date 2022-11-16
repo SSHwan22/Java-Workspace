@@ -19,7 +19,8 @@ public class ArrayPractice {
 		
 		int length = arr.length;
 		for(int i=0;i<arr.length; i++) {
-			arr[i] = 10-i;
+			arr[i] = length;
+			length--;
 			System.out.print(arr[i]+" ");
 		}
 	}
@@ -66,9 +67,10 @@ public class ArrayPractice {
 		System.out.print("0 ~ 6 사이 숫자 입력 : ");
 		int num = sc.nextInt();
 		
+		
 		String[] str = new String[] {"월요일","화요일","수요일","목요일","금요일","토요일","일요일"};
 		
-		if(num>=0 && num<=6) {
+		if(num<=6) {
 		System.out.println(str[num]);
 		}else {
 			System.out.println("잘못 입력하셨습니다.");
@@ -97,25 +99,27 @@ public class ArrayPractice {
 	
 	public void practice8() {
 		System.out.print("정수 : ");
-		int size = sc.nextInt();
+		int num = sc.nextInt();
 		
-		if(size < 3 || size % 2== 0) {
-			System.out.println("다시 입력하세요.");
-			practice8();
+		int[] numArr = new int[num];
+		if(num%2==1 && num>3) {
+			for(int i=0; i<=numArr.length/2;i++) {
+				numArr[i] = i+1;
+				System.out.print(numArr[i]+", ");
+			}
+			for(int i= num/2; i>0; i--) {
+				numArr[i]=i;
+				if(i==1) {
+					System.out.print(numArr[i]);
+				}else {
+					System.out.print(numArr[i]+", ");
+				}
+			}
 		}else {
-			int [] arr = new int[size];
-			for(int i=0; i<=size/2;i++) {
-				arr[i] = 1+i;
-			}
-			int value = 1;
-			for(int i=size/2+1; i<arr.length; i++) {
-				arr[i] = size/2+1 - value;
-				value++;
-			}
-			for(int i=0; i<arr.length; i++) {
-				System.out.print(arr[i]+ (i == arr.length-1 ? "" : ", "));
-			}
+		System.out.println("다시 입력하세요.");
+		practice8();
 		}
+		
 	}
 	
 	public void practice9() {
@@ -124,22 +128,13 @@ public class ArrayPractice {
 		
 		String[] menuArr = new String[] {"양념","간장","후라이드","파닭","뿌링클"};
 		
-//		for(int i=0; i<menuArr.length; i++) {
-//			if(menuArr[i].equals(menu)) {
-//				System.out.println(menu+"배달 가능");
-//				break;
-//			}else {
-//				System.out.println(menu+"은 없는 메뉴입니다.");
-//				break;
-//			}
 		for(int i=0; i<menuArr.length; i++) {
 			if(menuArr[i].equals(menu)) {
-				System.out.println(menu+"치킨 배달 가능");
+				System.out.println(menu+"배달 가능");
 				return;
-			
 			}
 		}
-		System.out.println(menu+"치킨은 없는 메뉴입니다.");
+		System.out.println(menu+"은 없는 메뉴입니다.");
+		}
 		
-	}
 }
