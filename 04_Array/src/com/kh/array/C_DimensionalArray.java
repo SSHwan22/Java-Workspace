@@ -33,7 +33,10 @@ public class C_DimensionalArray {
 		System.out.println("2번 열의 길이 : " + arr[2].length);
 
 		/*
-		 * 출력(arr[0][0]) -> 1행 1열 출력(arr[1][2]) -> 1행 2열 ... 출력(arr[0][4]) -> 1행 5열
+		 * 출력(arr[0][0]) -> 1행 1열
+		 * 출력(arr[1][2]) -> 1행 2열
+		 * ... 
+		 * 출력(arr[0][4]) -> 1행 5열
 		 * ------------------------
 		 * 
 		 * 출력(arr[2][4]) -> 3행 5열
@@ -74,7 +77,7 @@ public class C_DimensionalArray {
 		int[] arr = { 1, 2, 3, 4, 5 };
 
 		// 이차원 배열 선언 및 할당과 동시에 초기화
-		int[][] arr2 = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+		int[][] arr2 = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };// [3][5]
 
 		for (int i = 0; i < arr2.length; i++) {
 			for (int j = 0; j < arr2[i].length; j++) {
@@ -105,7 +108,9 @@ public class C_DimensionalArray {
 		arr[1] = new int[] { 5, 6, 8 };
 		arr[2] = new int[4];
 		/*
-		 * 0 0 5 6 8 0 0 0 0
+		 * 0 0
+		 * 5 6 8
+		 * 0 0 0 0
 		 */
 
 		int value = 1;
@@ -124,7 +129,9 @@ public class C_DimensionalArray {
 		// char[][] 가변 배열 생성
 		char[][] arr = new char[3][];
 		/*
-		 * a b c d e f g h i k
+		 * a b c
+		 * d e
+		 * f g h i k
 		 */
 		arr[0] = new char[3];
 		arr[1] = new char[2];

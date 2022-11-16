@@ -91,10 +91,11 @@ public class B_ArrayCopy {
 		
 		//System.arraycopy(원본 배열명, 원본배열의 복사를 시작할 인덱스, 복사본 배열명, 복사본 배열의 복사될 시작 인덱스, 복사할 갯수)
 		//System.arraycopy(origin, 0, copy, 0, 5); // 1 2 3 4 5 0 0 0 0 0
-		//System.arraycopy(origin, 2, copy, 9, 2);
 		//System.arraycopy(origin, 0, copy, 2, 5); // 0 0 1 2 3 4 5 0 0 0
-		System.arraycopy(origin, 2, copy, 1, 3); // 0 3 4 5 0 0 0 0 0 0 
+		//System.arraycopy(origin, 2, copy, 1, 3); // 0 3 4 5 0 0 0 0 0 0 
+		System.arraycopy(origin, 2, copy, 9, 2);
 		//인덱스의 범위를 벗어난 복사는 불가능함.
+		// 0 0 0 0 0 0 0 0 3 4
 		
 		for(int i=0; i<copy.length; i++) {
 			System.out.print(copy[i]+" ");
