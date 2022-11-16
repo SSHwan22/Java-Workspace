@@ -357,4 +357,5 @@ public class A_Array {
 		System.out.printf("키의 평균: %.1f",sum/3);
 		
 	}
+	
 }
