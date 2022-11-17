@@ -18,14 +18,14 @@ public class Run {
 //		ap.practice8();
 //		ap.practice9();
 		
-		dp.practice1();
+//		dp.practice1();
 //		dp.practice2();
 //		dp.practice3();
-		dp.practice4();
+//		dp.practice4();
 //		dp.practice5();
-		dp.practice6();
+//		dp.practice6();
 //		dp.practice7();
 //		dp.practice8();
-//		dp.practice9();
+		dp.practice9();
 	}
 }

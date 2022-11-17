@@ -58,6 +58,7 @@ public class C_DimensionalArray {
 		// 순서대로 1,2,3,4 ... 15 값을 넣어보기
 		int[][] arr = new int[3][5]; // arr[0][0] -> 1, arr[0][1] -> 2, arr[2][4] -> 15
 
+		// 값을 대입, 출력
 		int value = 1;
 		for (int i = 0; i < arr.length; i++) {// 0, 1, 2
 			for (int j = 0; j < arr[i].length; j++) {// 0, 1, 2, 3, 4
@@ -68,7 +69,6 @@ public class C_DimensionalArray {
 			}
 			System.out.println();
 		}
-		// 값을 대입, 출력
 
 	}
 
@@ -177,23 +177,18 @@ public class C_DimensionalArray {
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
-				if (i == 0) {
-					System.out.print("국어점수를 입력하세요 : ");
+					System.out.printf("%s점수를 입력하세요 : ", i==0 ? "국어" : "영어");
 					arr[i][j] = sc.nextInt();
-				} else if(i==1){
-					System.out.print("영어점수를 입력하세요 : ");
-					arr[i][j] = sc.nextInt();
-				}
 			}
 			System.out.println();
 		}
-		System.out.print("국어점수 : ");
-		for (int i = 0; i < arr[0].length; i++) {
-			System.out.print(arr[0][i] + " ");
-		}
-		System.out.print("영어점수 : ");
-		for (int i = 0; i < arr[1].length; i++) {
-			System.out.print(arr[1][i] + " ");
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.printf("%s점수 : ", i==0 ? "국어" : "영어");
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
 		}
 	}
 
