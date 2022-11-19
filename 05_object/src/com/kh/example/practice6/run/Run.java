@@ -6,8 +6,8 @@ public class Run {
 
 	public static void main(String[] args) {
 		Book book1 = new Book();
-		Book book2 = new Book("총, 균, 쇠","가","나작가");
-		Book book3 = new Book("어린왕자", "발행자", "생 머시기", 30000, 0.1);
+		Book book2 = new Book("어린왕자","솔","생텍쥐페리");
+		Book book3 = new Book("해리포터", "발행자", "J.k.롤링", 25000, 0.1);
 		
 		book1.inform();
 		book2.inform();

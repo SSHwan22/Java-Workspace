@@ -67,7 +67,7 @@ public class DimensionPractice {
 				// arr[3][j] = arr[3][j]+arr[i][j]; //각 열의 모든값의 합
 				arr[3][j] += arr[i][j]; // 각 열의 모든값의 합(대입연산자 적용)
 
-				arr[3][3] += arr[i][j] * 2;
+				arr[3][3] += arr[i][j]*2;
 			}
 
 		}
@@ -142,18 +142,19 @@ public class DimensionPractice {
 		for (int i = 0; i < strArr[0].length; i++) {
 			for (int j = 0; j < strArr.length; j++) {
 				System.out.print(strArr[j][i] + " ");
+				//System.out.printf("(%d, %d)",j,i);
 			}
 			System.out.println();
 		}
-//			System.out.println();
-//		for (int i = 0; i < strArr.length; i++) {		//0, 1, 2, 3, 4, 5
-//			for (int j = 0; j < strArr[i].length; j++) { //0, 1, 2, 3, 4
+			System.out.println();
+		for (int i = 0; i < strArr.length; i++) {		//0, 1, 2, 3, 4, 5
+			for (int j = 0; j < strArr[i].length; j++) { //0, 1, 2, 3, 4
 //				 System.out.print(strArr[j][i]+" ");	 //j의 부족?
 //				 //System.out.print(strArr[i][j]+" ");
-//				//System.out.printf("(%d, %d)", j, i);
-//			}
-//			System.out.println();
-//		}
+				System.out.printf("(%d, %d)", j, i);
+				}
+			System.out.println();
+		}
 
 	}
 
