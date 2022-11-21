@@ -43,7 +43,7 @@ public class Shape {
 	
 	
 	public String information() {
-			return height+" "+width+" "+color;
+		return height+" "+width+" "+color;
 	}
 	
 }

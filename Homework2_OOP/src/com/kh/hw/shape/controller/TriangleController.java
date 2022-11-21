@@ -10,7 +10,7 @@ public class TriangleController {
 	public double calcArea(double height, double width) {
 		s.setHeight(height);
 		s.setWidth(width);
-		return s.getHeight()*s.getWidth();
+		return height*width/2;
 	}
 	
 	public void paintColor(String color) {
@@ -18,7 +18,7 @@ public class TriangleController {
 	}
 	
 	public String print() {
-		return s.information();
+		return "삼각형 "+s.information();
 	
 	}
 }

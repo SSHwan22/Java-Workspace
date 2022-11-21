@@ -25,8 +25,8 @@ public class E_Comparison {
 		int a = 10;
 		int b = 25;
 		
-		System.out.println("a > b" + (a>b));
-		System.out.println("a <= b" + (a<=b));
+		System.out.println("a > b : " + (a>b));
+		System.out.println("a <= b : " + (a<=b));
 		
 		boolean result1 = (a == b);
 		System.out.println("result1 : "+result1);

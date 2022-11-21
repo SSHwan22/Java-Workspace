@@ -64,8 +64,11 @@ public class D_Printf {
 		//문자와 문자열 테스트
 		char ch = 'a';
 		String str = "Hello";
+		int a= 10;
 		
 		System.out.printf("%c %s \n",ch,str);
 		System.out.printf("%C %S %% %n",ch,str); // %C, %S : 영어 알파벳일경우 대문자로 변경해서 출력
+		System.out.printf("%5d\n",a);
+		System.out.printf("%-5d",a);
 	}
 }

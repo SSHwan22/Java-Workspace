@@ -21,7 +21,7 @@ public class Run {
 		//dl.method();
 		
 		E_Comparison ec = new E_Comparison();
-		//ec.method1();
+		ec.method1();
 		//ec.method2();
 		
 		F_Logical fl = new F_Logical();
@@ -35,6 +35,6 @@ public class Run {
 		//gt.method2();
 		//gt.method3();
 		//gt.method4();
-		gt.method5();
+//		gt.method5();
 	}
 }

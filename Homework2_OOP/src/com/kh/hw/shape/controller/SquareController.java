@@ -8,13 +8,13 @@ public class SquareController {
 	public double calcPerimeter(double height, double width) {
 		s.setHeight(height);
 		s.setWidth(width);
-		return s.getHeight()*2+s.getWidth()*2;
+		return height*2+width*2;
 	}
 	
 	public double calcArea(double height, double width) {
 		s.setHeight(height);
 		s.setWidth(width);
-		return s.getHeight()*s.getWidth();
+		return height * width;
 	}
 	
 	public void paintColor(String color) {
@@ -22,7 +22,8 @@ public class SquareController {
 	}
 	
 	public String print() {
-		return s.information();
+		s.setType(3);
+		return "사각형 "+s.information();
 	}
 	
 }
