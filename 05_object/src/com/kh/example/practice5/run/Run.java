@@ -5,8 +5,9 @@ import com.kh.example.practice5.model.vo.Lotto;
 public class Run {
 
 	public static void main(String[] args) {
-		Lotto lotto1 = new Lotto();
-		lotto1.information();
+		//Lotto lotto1 = new Lotto();
+		//lotto1.information();
+		new Lotto().information(); 
 			
 	}
 }

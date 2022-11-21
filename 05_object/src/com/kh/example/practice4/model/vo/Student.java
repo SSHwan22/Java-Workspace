@@ -53,6 +53,7 @@ public class Student {
 	}
 	
 	public void information() {
-		System.out.printf("%d학년 %d반 %s은 %c자이고 키가 %.1f이다.", grade, classroom, name, gender, height);
+		//System.out.printf("%d학년 %d반 %s은 %c자이고 키가 %.1f이다.", grade, classroom, name, gender, height);
+		System.out.printf("%s학생은 %d학년 %d반이고, 키는 %.1f이며 %c학생입니다.",name, grade, classroom, height, gender);
 	}
 }
