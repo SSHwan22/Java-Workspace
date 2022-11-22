@@ -27,6 +27,10 @@ public class EmployeeController {
 	}
 	
 	public String inform() {
-		return e.printEmployee();
+		if(e==null) {
+			return null;
+		}else {
+			return e.printEmployee();
+		}
 	}
 }
