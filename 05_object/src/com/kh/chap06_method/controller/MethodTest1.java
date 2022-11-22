@@ -1,4 +1,4 @@
-package com.kh.chap05.method.controller;
+package com.kh.chap06_method.controller;
 
 public class MethodTest1 {
 	/*

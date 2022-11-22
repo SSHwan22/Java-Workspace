@@ -1,6 +1,9 @@
-package com.kh.chap05.method.run;
+package com.kh.chap06_method.run;
 
-import com.kh.chap05.method.controller.*;
+import java.util.Scanner;
+
+import com.kh.chap06_method.controller.MethodTest1;
+import com.kh.chap06_method.controller.MethodTest2;
 
 public class Run {
 
@@ -24,6 +27,6 @@ public class Run {
 		MethodTest2.method3("민경민", 33);
 		
 		System.out.println(MethodTest2.method4(110));
+		Scanner sc = new Scanner(System.in);
 	}
-
 }

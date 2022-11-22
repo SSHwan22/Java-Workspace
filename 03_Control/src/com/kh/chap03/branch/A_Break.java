@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class A_Break {
 	/*
-	 * break; | break문을 만나는 순간 현재 숙해있는 반복문을 빠져나감.
+	 * break; | break문을 만나는 순간 현재 속해있는 반복문을 빠져나감.
 	 * -> 즉, 가장가까운 반복문만 빠져나감.
 	 * 
 	 * 주의할 점 : switch문 안의 break; 와는 다른 개념.
@@ -38,7 +38,7 @@ public class A_Break {
 	}
 	
 	public void method2() {
-		//매번 사용자에게 문ㅁ자열을 입력받은 후 해당 문자열의 길이 출력
+		//매번 사용자에게 문자열을 입력받은 후 해당 문자열의 길이 출력
 		//단, 사용자가 입력한 문자열이 "exit" 인 경우 반복문을 종료
 		Scanner sc = new Scanner(System.in);
 		

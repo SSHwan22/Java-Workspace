@@ -8,8 +8,7 @@ public class TriangleController {
 	
 	
 	public double calcArea(double height, double width) {
-		s.setHeight(height);
-		s.setWidth(width);
+		s = new Shape(3, height, width);
 		return height*width/2;
 	}
 	

@@ -1,4 +1,4 @@
-package com.kh.chap05.method.run;
+package com.kh.chap06_method.controller;
 
 public class OverloadingTest {
 	/*
@@ -49,20 +49,5 @@ public class OverloadingTest {
 //	private void test(int a, int b, String s) {
 //		
 //	}
-	/*
-	 * 1. 문제해결 시나리오
-	 * 2. 서술형 - 변수의 명명규칙?
-	 * 	1. 영어 대소문자는 구분된다.
-	 * 	2. 길이에 제한이 없다.
-	 * 	3. 숫자로 시작하면 안된다.
-	 * 	4. 특수문자는 $, _ 만 쓸 수 있다.
-	 * 
-	 * 기본 자료형의 종류
-	 * 기본 자료형과 참조 자료형의 차이점 : 기본 자료형은 stack 영역에서 값 자체가 그대로 참조 자료형은 heap영역에서 생성된 값을 stack에 주소로 지정된다.
-	 * 변수란 무엇인가 : 메모리에 값을 기록하기 위한 공간
-	 * 상수란 무엇인가 : 특징 final 키워드와 변수명이 대문자이고 값은 바꿀수가 없다.
-	 * 
-	 * 증감연산자
-	 * 
-	 */
+
 }
