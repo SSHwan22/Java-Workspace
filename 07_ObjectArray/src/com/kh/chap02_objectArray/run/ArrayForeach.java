@@ -79,11 +79,13 @@ public class ArrayForeach {
 		}
 		
 		
-		
-		
-		
-		
-		
+		1
+		1
+		1
+		1
+		m		
+		1		
+		1		
 		
 		
 		

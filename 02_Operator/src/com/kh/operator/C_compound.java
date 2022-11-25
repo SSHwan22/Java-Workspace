@@ -13,6 +13,9 @@ public class C_compound {
 	
 	public void method() {
 		
+		int age = 24;
+		
+		System.out.println(age);
 		int num = 12;
 		System.out.println("현재 nu : "+num);
 		
