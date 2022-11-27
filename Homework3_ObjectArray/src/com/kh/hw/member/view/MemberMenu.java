@@ -132,13 +132,12 @@ public class MemberMenu {
 	}
 
 	public void searchName() {
-		System.out.print("검색할 이름 아이디 : ");
+		System.out.print("검색할 이름 : ");
 		String name = sc.nextLine();
 		System.out.println("찾으신 회원 검색 결과입니다.");
 		for(int i=0; i<mc.searchName(name).length; i++) {
 			if(mc.searchName(name)[i].getName().equals(name)) {
-					mc.searchName(name)[i].inform();
-					break;
+					System.out.println(mc.searchName(name)[i].inform());
 			}
 		}
 	}
@@ -149,8 +148,9 @@ public class MemberMenu {
 		System.out.println("찾으신 회원 검색 결과입니다.");
 		mc.searchEmail(email);
 		for(int i=0; i<mc.searchEmail(email).length; i++) {
-			System.out.println(mc.searchEmail(email)[i].inform());
-			break;
+			if(mc.searchName(email)[i].getEmail().equals(email)) {
+				System.out.println(mc.searchEmail(email)[i].inform());
+		}
 		}
 
 	}
