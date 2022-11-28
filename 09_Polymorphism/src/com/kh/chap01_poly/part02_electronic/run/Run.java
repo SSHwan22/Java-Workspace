@@ -42,6 +42,7 @@ public class Run {
 			System.out.println(elec[i]);
 		}
 		
+		
 		/*
 		 * 다형성을 사용하는 이유
 		 * 1. 부모타입의 객체배열로 다양한 자식들을 받아줄 수 있음

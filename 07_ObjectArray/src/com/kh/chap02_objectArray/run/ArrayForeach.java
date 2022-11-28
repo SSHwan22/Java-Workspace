@@ -77,19 +77,7 @@ public class ArrayForeach {
 		if(find==0) {
 		System.out.println("해당 핸드폰이 없습니다.");
 		}
-		
-		
-		1
-		1
-		1
-		1
-		m		
-		1		
-		1		
-		
-		
-		
-		
+
 	}
 
 }

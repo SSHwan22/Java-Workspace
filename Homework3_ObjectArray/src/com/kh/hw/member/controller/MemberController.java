@@ -5,7 +5,6 @@ import com.kh.hw.member.model.vo.Member;
 public class MemberController {
 	public static final int SIZE = 10;
 	private Member[] m = new Member[SIZE];
-	int index;
 	{
 		m[0] = new Member("aaaaa", "민경민", "aa", "aaa@aaa.aaa", 'M', 33);
 		m[1] = new Member("bbbbb", "강고결", "bb", "bbb@bbb.bbb", 'M', 34);
@@ -18,118 +17,132 @@ public class MemberController {
 		m[8] = new Member("iiiii", "윤예의", "ii", "iii@iii.iii", 'F', 28);
 		m[9] = new Member("jjjjj", "정재주", "jj", "jjj@jjj.jjj", 'M', 23);
 	}
+
 	public int exsitMemberNum() {
-		return index;
+		int count = 0;
+		for (Member member : m) {
+			if (member != null) {
+				count++;
+			}
+		}
+
+		return count;
 	}
 
 	public boolean checkId(String inputId) {
-		boolean check = true;
-		for (int i = 0; i < index+1; i++) {
-			for(int j=0; j<i; j++) {
-				if (m[j].getId().equals(inputId)) {
-					check = false;
-					break;
-				}else {
-					check = true;
-				}
+		for (Member member : m) {
+			if (member != null && member.getId().equals(inputId)) {
+				return false;
+			}
 		}
-		}
-		return check;
+		return true;
 	}
 
 	public void insertMember(String id, String name, String password, String email, char gender, int age) {
-		m[index++] = new Member(id, name, password, email, gender, age);
-		System.out.println(index);
+		for(int i=0; i<SIZE; i++) {
+			if(m[i] == null) {
+				m[i] = new Member(id, name, password, email, gender, age);
+					break;
+				}
+			}
+//		for (Member member : m) {
+//			if (member != null) {
+//				member = new Member(id, name, password, email, gender, age);
+//				break;
+//			}
+//
+//		}
 	}
 
-	
 	public String searchId(String id) {
-		String result = "";
-		for(int i=0;i<SIZE;i++) {
-			if(m[i].getId().equals(id)) {
-				result = m[i].inform();
+		for (Member member : m) {
+			if (member != null && member.getId().equals(id)) {
+				member.inform();
 				break;
-			}else {
-				result = null;
 			}
 		}
-		return result;
+		return "";
 	}
-	
-	public Member[] searchName(String  name) {
-		return m;
+
+	public Member[] searchName(String name) {
+		Member[] members = new Member[SIZE];
+
+		int index = 0;
+		for (Member member : m) {
+			if (members != null && member.getName().equals(name)) {
+				members[index++] = member;
+			}
+		}
+		return members;
 	}
-	
-	
+
 	public Member[] searchEmail(String email) {
-		return m;
+		Member[] members = new Member[SIZE];
+
+		int index = 0;
+		for (Member member : m) {
+			if (members != null && member.getName().equals(email)) {
+				members[index++] = member;
+			}
+		}
+		return members;
 	}
-	
+
 	public boolean updatePassword(String id, String password) {
 		boolean check = false;
-		for(int i=0;i<SIZE;i++) {
-			if(m[i].getId().equals(id)) {
-				m[i].setPassword(password);
+		// for(int i=0;i<SIZE;i++) {
+		for (Member member : m) {
+			if (member != null && member.getId().equals(id)) {
+				member.setPassword(password);
 				check = true;
 				break;
-			}else {
-				check = false;
 			}
 		}
 		return check;
 	}
-	
+
 	public boolean updateName(String id, String name) {
 		boolean check = false;
-		for(int i=0;i<SIZE;i++) {
-			if(m[i].getId().equals(id)) {
-				m[i].setName(name);
+		for (Member member : m) {
+			if (member != null && member.getId().equals(id)) {
+				member.setName(name);
 				check = true;
 				break;
-			}else {
-				check = false;
 			}
 		}
 		return check;
 	}
-	
+
 	public boolean updateEmail(String id, String email) {
 		boolean check = false;
-		for(int i=0;i<SIZE;i++) {
-			if(m[i].getId().equals(id)) {
-				m[i].setEmail(email);
+		for (Member member : m) {
+			if (member != null && member.getId().equals(id)) {
+				member.setEmail(email);
 				check = true;
 				break;
-			}else {
-				check = false;
 			}
 		}
 		return check;
 	}
-	
+
 	public boolean delete(String id) {
 		boolean check = false;
-		for(int i=0;i<SIZE;i++) {
-			if(m[i].getId().equals(id)) {
-				check = true;
+		for (int i=0; i< SIZE; i++) {
+			if (m[i] != null && m[i].getId().equals(id)) {
 				m[i] = null;
+				check = true;
 				break;
-			}else {
-				check = false;
 			}
 		}
 		return check;
 	}
-	
-	public void delete() {//전체
-		for(int i=0;i<SIZE;i++) {
-		m[i]=null;
-		index--;
-		}
+
+	public void delete() {// 전체
+		m = new Member[SIZE];// m배열에 새로운 Member로 덮어씌우기
 	}
-	
+
 	public Member[] printAll() {
-		index = 0;
 		return m;
 	}
+	
 }
