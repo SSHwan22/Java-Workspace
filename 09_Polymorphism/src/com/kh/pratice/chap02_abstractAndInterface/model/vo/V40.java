@@ -28,11 +28,18 @@ public class V40 extends SmartPhone implements NotePen{
 	}
 	@Override
 	public boolean bluetoothPen() {
-		return true;
+		return false;
 	}
 	@Override
 	public String printInformaiton() {
-		return null;
+		return "V40는 "+getMaker()+"에서 만들어졌고 제원은 다음과 같다.\n"
+				+ "번호를 누르고 "+makeCall()+"\n"
+				+takeCall()+"\n"
+				+picture()+"\n"
+				+charge()+"\n"
+				+touch()+"\n"
+				+"불루투스 펜 탑재 여부 : "+bluetoothPen();
+		
 	}
 	
 }
