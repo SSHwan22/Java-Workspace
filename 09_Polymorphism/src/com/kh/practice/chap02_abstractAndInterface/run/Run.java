@@ -1,6 +1,6 @@
-package com.kh.pratice.chap02_abstractAndInterface.run;
+package com.kh.practice.chap02_abstractAndInterface.run;
 
-import com.kh.pratice.chap02_abstractAndInterface.controller.PhoneController;
+import com.kh.practice.chap02_abstractAndInterface.controller.PhoneController;
 
 public class Run {
 

@@ -1,6 +1,6 @@
-package com.kh.pratice.chap02_abstractAndInterface.controller;
+package com.kh.practice.chap02_abstractAndInterface.controller;
 
-import com.kh.pratice.chap02_abstractAndInterface.model.vo.*;
+import com.kh.practice.chap02_abstractAndInterface.model.vo.*;
 
 public class PhoneController {
 	private String[] result = new String[2];

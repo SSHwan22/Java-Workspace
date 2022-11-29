@@ -1,4 +1,4 @@
-package com.kh.pratice.chap02_abstractAndInterface.model.vo;
+package com.kh.practice.chap02_abstractAndInterface.model.vo;
 
 public abstract class SmartPhone implements CellPhone, TouchDisplay{
 	private String maker;
