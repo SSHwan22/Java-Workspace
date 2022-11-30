@@ -1,4 +1,4 @@
-package com.kh.chap_01_beforeVsafter.after.model.vo;
+package com.kh.chap01_beforeVsafter.after.model.vo;
 
 public class SmartPhone extends Product{
 

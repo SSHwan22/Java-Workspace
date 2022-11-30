@@ -1,4 +1,4 @@
-package com.kh.chap_01_beforeVsafter.before.model.vo;
+package com.kh.chap01_beforeVsafter.before.model.vo;
 
 public class SmartPhone {
 	private String brand;

@@ -27,6 +27,8 @@ public class TokenMenu {
 			case 3:
 				System.out.println("프로그램을 종료합니다.");
 				return;
+			default:
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
 			}
 		}
 	}
@@ -35,9 +37,10 @@ public class TokenMenu {
 		String str = "J a v a P r o g r a m ";
 		System.out.println("토큰 처리 전 글자 : "+ str);
 		System.out.println("토큰 처리 전 개수 : "+ str.length());
-		System.out.println("토큰 처리 후 글자 : "+tc.afterToken(str));
-		System.out.println("토큰 처리 후 개수 : "+tc.afterToken(str).length());
-		System.out.println("모두 대문자로 변환 : "+tc.afterToken(str).toUpperCase());
+		str = tc.afterToken(str);
+		System.out.println("토큰 처리 후 글자 : "+str);
+		System.out.println("토큰 처리 후 개수 : "+str.length());
+		System.out.println("모두 대문자로 변환 : "+str.toUpperCase());
 	}
 
 	public void inputMenu() {

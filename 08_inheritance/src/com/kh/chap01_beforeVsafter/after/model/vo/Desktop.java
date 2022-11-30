@@ -1,4 +1,4 @@
-package com.kh.chap_01_beforeVsafter.after.model.vo;
+package com.kh.chap01_beforeVsafter.after.model.vo;
 
 //			  자식			   부모
 //			  후손			   조상

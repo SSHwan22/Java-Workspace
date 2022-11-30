@@ -1,6 +1,6 @@
-package com.kh.chap_01_beforeVsafter.before.run;
+package com.kh.chap01_beforeVsafter.before.run;
 
-import com.kh.chap_01_beforeVsafter.before.model.vo.*;
+import com.kh.chap01_beforeVsafter.before.model.vo.*;
 
 public class Run {
 
