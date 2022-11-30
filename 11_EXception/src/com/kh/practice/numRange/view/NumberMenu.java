@@ -1,10 +1,9 @@
 package com.kh.practice.numRange.view;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 import com.kh.practice.numRange.controller.NumberController;
+import com.kh.practice.numRange.exception.NumRangeException;
 
 public class NumberMenu {
 	
@@ -17,8 +16,8 @@ public class NumberMenu {
 		int num2 = sc.nextInt();
 		try {
 		System.out.println(num1+"은(는) "+num2+"의 배수인가 ? "+nc.checkDouble(num1, num2));
-		}catch ( ) {
-			
+		}catch (NumRangeException e) {
+			e.printStackTrace();
 		} 
 		
 		
