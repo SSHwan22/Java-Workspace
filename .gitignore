@@ -1,1 +1,6 @@
 /.metadata/
+Test/.classpath
+Test/.project
+Test/.settings/org.eclipse.jdt.core.prefs
+Test/src/run/Run.java
+Test/src/run/test2.java
