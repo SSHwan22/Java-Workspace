@@ -19,8 +19,7 @@ public class PersonMenu {
 			System.out.println("2. 사원 메뉴");
 			System.out.println("9. 끝내기");
 			System.out.print("메뉴 번호 : ");
-			int numMenu = sc.nextInt();
-			sc.nextLine();
+			int numMenu = Integer.parseInt(sc.nextLine());
 
 			switch (numMenu) {
 			case 1:

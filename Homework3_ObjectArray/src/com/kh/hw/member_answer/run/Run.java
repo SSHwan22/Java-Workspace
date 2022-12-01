@@ -1,4 +1,4 @@
-package com.kh.hw.member.run;
+package com.kh.hw.member_answer.run;
 
 import com.kh.hw.member.view.MemberMenu;
 

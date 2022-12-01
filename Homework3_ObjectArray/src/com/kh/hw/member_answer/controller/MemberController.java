@@ -1,4 +1,4 @@
-package com.kh.hw.member.controller;
+package com.kh.hw.member_answer.controller;
 
 import com.kh.hw.member.model.vo.Member;
 

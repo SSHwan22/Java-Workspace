@@ -1,4 +1,4 @@
-package com.kh.hw.member.view;
+package com.kh.hw.member_answer.view;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ public class MemberMenu {
 //		메뉴 번호 :
 		while(true) {
 			System.out.println("최대 등록 가능한 회원 수는 "+MemberController.SIZE+"명입니다.");
-			int existNum = mc.existMemberNum();
+			int existNum = mc.exsitMemberNum();
 			System.out.println("현재 등록된 회원 수는 "+existNum+"명 입니다.");
 			
 			if(existNum != 10) {
@@ -328,7 +328,7 @@ public class MemberMenu {
 		// mc의 printAll() 메소드의 반환 값을 가지고 저장된 회원을 출력하는데
 		// 저장된 회원의 수가 0명이면 “저장된 회원이 없습니다.” 출력,
 		// 0명이 아니면 저장된 모든 회원의 정보 출력
-		if(mc.existMemberNum() == 0) {
+		if(mc.exsitMemberNum() == 0) {
 			System.out.println("저장된 회원이 없습니다.");
 		}else {
 			
