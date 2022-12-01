@@ -1,4 +1,4 @@
-package com.kh.hw.member.model.vo;
+package com.kh.hw.member_answer.model.vo;
 
 public class Member {
 	private String id;

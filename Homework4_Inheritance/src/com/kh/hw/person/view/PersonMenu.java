@@ -19,8 +19,7 @@ public class PersonMenu {
 			System.out.println("2. 사원 메뉴");
 			System.out.println("9. 끝내기");
 			System.out.print("메뉴 번호 : ");
-			int numMenu = sc.nextInt();
-			sc.nextLine();
+			int numMenu = Integer.parseInt(sc.nextLine());
 
 			switch (numMenu) {
 			case 1:
@@ -164,8 +163,8 @@ public class PersonMenu {
 				return;
 			} else {
 				System.out.print("그만 하시려면 N(또는 n), 이어하시려면 아무 키나 누르세요 : ");
-				char n = sc.nextLine().charAt(0);
-				if (n == 'N' || n == 'n') {
+				char n = sc.nextLine().toUpperCase().charAt(0);
+				if (n == 'N') {
 					return;
 				}
 			}
