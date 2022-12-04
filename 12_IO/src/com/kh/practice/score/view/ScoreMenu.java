@@ -17,8 +17,8 @@ public class ScoreMenu {
 
 	public void mainMenu() {
 		while (true) {
-			System.out.println("1.성적 저장");
-			System.out.println("2.성적 출력");
+			System.out.println("1. 성적 저장");
+			System.out.println("2. 성적 출력");
 			System.out.println("9. 끝내기");
 			System.out.print("메뉴 번호 : ");
 			int num = Integer.parseInt(sc.nextLine());
@@ -86,7 +86,7 @@ public class ScoreMenu {
 				eng = in.readInt();
 				math = in.readInt();
 				sum = in.readInt();
-				avg = in.readDouble();
+				avg = in.readDouble(); 
 				System.out.printf("%s\t",name);
 				System.out.printf("%d\t",kor);
 				System.out.printf("%d\t",eng);
@@ -108,9 +108,6 @@ public class ScoreMenu {
 			}
 			
 		} catch (EOFException e) {
-//			System.out.printf("%-6s%-6s%-6s\n","읽은 횟수","전체 합계","전체 평균");
-//			System.out.printf("%-8d%-7d%-6f\n",count,sumAll,avgAll);
-			
 			System.out.println("읽은 횟수 전체 합계 전체 평균");
 			System.out.println(count+"\t"+sumAll+"\t"+avgAll/count);
 		} catch (IOException e) {
