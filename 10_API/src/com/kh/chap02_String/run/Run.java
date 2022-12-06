@@ -14,9 +14,9 @@ public class Run {
 //		abs.method2();
 //		abs.method3();
 		
-		bsmt.method1();
+//		bsmt.method1();
 		
-//		cstt.method();
+		cstt.method();
 		
 //		dsbab.method();
 	}

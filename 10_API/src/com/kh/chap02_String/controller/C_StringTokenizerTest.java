@@ -36,8 +36,6 @@ public class C_StringTokenizerTest {
 		}
 		System.out.println(stn.hasMoreTokens()); //stn의 토큰을 다 출력후 hasMoreTokens메서드를 출력하니깐 false
 		
-		
-		
 	}
 	
 }
