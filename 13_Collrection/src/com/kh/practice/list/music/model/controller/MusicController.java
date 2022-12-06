@@ -76,6 +76,10 @@ public class MusicController {
 		Collections.sort(list);
 		return 1;
 	}
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
 	public int descSinger() {
 		Collections.sort(list, new AscTitle());
 		return 1;

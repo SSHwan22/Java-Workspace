@@ -120,9 +120,13 @@ public class MusicView {
 		if(mc == null) {
 			System.out.println("검색한 곡이 없습니다.");
 		}else {
+<<<<<<< Updated upstream
 			
 			System.out.println(m.getTitle()+", "+m.getSinger()+"을(를) 삭제했습니다.");
 			
+=======
+			System.out.println(m.getTitle()+", "+m.getSinger()+"을(를) 삭제했습니다.");
+>>>>>>> Stashed changes
 		}
 	}
 
@@ -155,6 +159,15 @@ public class MusicView {
 
 	public void descSinger() {
 		System.out.println("****** 가수명 내림차순 정렬 ******");
+<<<<<<< Updated upstream
+=======
+		int result = mc.descSinger();
+		if(result > 0) {
+			System.out.println("정렬 성공");
+		}else {
+			System.out.println("정렬 실패");
+		}
+>>>>>>> Stashed changes
 		
 	}
 
