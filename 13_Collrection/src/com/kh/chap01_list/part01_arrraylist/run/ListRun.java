@@ -130,7 +130,7 @@ public class ListRun {
 		System.out.println("====================================================================================");
 		
 		//7. subList(int index1, int index2) : 해당 리스트로부터 index1에서 index2까지의 데이터 값들을 추출해서
-		//									   새로운 List로 반환시켜주는 메서드
+		//						list			   새로운 List로 반환시켜주는 메서드
 		List<Music> sub = list.subList(0, 2); // 0 <= 인덱스 범위 < 2 
 		System.out.println(sub);
 		
