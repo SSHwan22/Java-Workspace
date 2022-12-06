@@ -49,7 +49,7 @@ public class BufferedDao {
 	 * } 
 	 * 
 	 * 스트림개체를 try(여기)에 넣어버리면
-	 * 스트림 객체 생성 후 해당 블록의 구문이 실행 완료되면 아아서 자원 반납이 됨.
+	 * 스트림 객체 생성 후 해당 블록의 구문이 실행 완료되면 알아서 자원 반납이 됨.
 	 */
 		
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter("c_buffer.txt"))){;

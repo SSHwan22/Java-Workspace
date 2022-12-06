@@ -27,7 +27,7 @@ public class FileDAO {
 	public void fileSave(String file, String s) {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {//파일 생성
 			bw.write(s);	//파일 내용 쓰기
-			bw.flush();		
+			//bw.flush();		
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
