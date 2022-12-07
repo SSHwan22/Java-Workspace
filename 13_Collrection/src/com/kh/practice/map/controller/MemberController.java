@@ -50,16 +50,17 @@ public class MemberController {
 			map.get(id).setName(newName);
 		}
 	}
-//	public TreeMap sameName(String name) {
-//		TreeMap<String, String> tree = new TreeMap<String, String>();
-//		Iterator<String> itKey = map.keySet().iterator();
-//		
-//		String key = itKey.next();
-//		if(map.containsValue(name)) {
-//			tree.put(key, name);
-//		}
-//		
-//		
-//		return ;
-//	}
+	public TreeMap sameName(String name) {
+		TreeMap<String, String> tree = new TreeMap<String, String>();
+		Set<String> set = map.keySet();
+		Iterator<String> setIt = set.iterator();
+		
+		while(setIt.hasNext()) {
+			if(map.containsValue(name)) {
+				String key = setIt.next();
+				tree.put(key, name);
+			}
+		}
+		return tree;
+	}
 }

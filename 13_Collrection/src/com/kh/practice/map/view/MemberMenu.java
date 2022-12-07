@@ -3,6 +3,7 @@ package com.kh.practice.map.view;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeMap;
 
 import com.kh.practice.map.controller.MemberController;
@@ -32,7 +33,7 @@ public class MemberMenu {
 				logIn();
 				break;
 			case 3:
-				//sameName();
+				sameName();
 				break;
 			case 9:
 				return;
@@ -104,14 +105,15 @@ public class MemberMenu {
 		System.out.print("아이디 : ");
 		String id = sc.nextLine();
 		
-		System.out.println("현재 비밀번호 : ");
+		System.out.print("현재 비밀번호 : ");
 		String oldPw = sc.nextLine();
-		System.out.println("새로운 비밀번호 : ");
+		System.out.print("새로운 비밀번호 : ");
 		String newPw = sc.nextLine();
 		
 		boolean changePw = mc.changePassword(id, oldPw, newPw);
 		if(changePw) {
 			System.out.println("비밀번호 변경에 성공했습니다.");
+			logIn();
 		}else {
 			System.out.println("비밀번호 변경에 실패했습니다. 다시 입력해주세요.");
 		}
@@ -135,14 +137,22 @@ public class MemberMenu {
 			System.out.println("이름 변경에 실패했습니다. 다시 입력해주세요.");
 		}
 	}
-
+	
 	public void sameName() {
-//		System.out.print("검색할 이름 : ");
-//		String name = sc.nextLine();
-//		mc.sameName(name);
-//		while(same.hasNext()) {
-//			
-//			System.out.println();
-//		}
+		System.out.print("검색할 이름 : ");
+		String name = sc.nextLine();
+		mc.sameName(name);
+		
+		TreeMap tree = mc.sameName(name);
+		
+		Set<Entry<String, String>> set = tree.entrySet();
+		Iterator<Entry<String, String>> itEntry = set.iterator();
+		
+		while(itEntry.hasNext()) {
+			Entry<String, String> entry = itEntry.next();
+			System.out.println(entry.getValue() +"-"+ entry.getKey());
+			
+			
+		}
 	}
 }
