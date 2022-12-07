@@ -1,12 +1,6 @@
 package com.kh.practice.list.music.model.vo;
 
-<<<<<<< Updated upstream
-import javax.print.attribute.standard.MediaSize.Other;
-
-public class Music<Muisc> implements Comparable<Object>{
-=======
-public class Music<Muisc> implements Comparable{
->>>>>>> Stashed changes
+public class Music implements Comparable {
 	private String title;
 	private String singer;
 
@@ -37,11 +31,7 @@ public class Music<Muisc> implements Comparable{
 
 	@Override
 	public String toString() {
-<<<<<<< Updated upstream
-		return "Music [title=" + title + ", singer=" + singer + "]";
-=======
-		return singer+" - "+title;
->>>>>>> Stashed changes
+		return singer + " - " + title;
 	}
 
 	@Override
@@ -77,20 +67,12 @@ public class Music<Muisc> implements Comparable{
 
 	@Override
 	public int compareTo(Object o) {
-<<<<<<< Updated upstream
-		Music other = (Muisc) o;
-		if(this.title.compareTo(Other.title) == 0) {
-			return this.title.compareTo(other.title);
-		}else {
-			return this.compareTo(other.title);
-=======
 		Music other = (Music) o;
-		if(this.title.compareTo(other.title) == 0) {
+		if (this.title.compareTo(other.title) == 0) {
 			return this.singer.compareTo(other.singer);
-		}else {
+		} else {
 			return this.title.compareTo(other.title);
->>>>>>> Stashed changes
 		}
+
 	}
-		
 }
