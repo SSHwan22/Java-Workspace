@@ -1,19 +1,22 @@
 package run;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Test {
 
 	public static void main(String[] args) {
-		Date date = new Date(2021 - 1900, 2 - 1, 15, 11, 30, 50);
-		System.out.println("매개변수 생성자 : "+date);
 		
+		int[] origin = {10, 20, 30, 40};
+		int[] copy = origin;
+		System.out.println("origin 배열 : "+origin[0] +" "+ origin[1] +" "+ origin[2] +" "+ origin[3]);
+		System.out.println("copy 배열   : "+copy[0] +" "+ copy[1] +" "+ copy[2] +" "+ copy[3]);
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분 ss초");
+		System.out.println("origin의 주소값        : "+origin);
+		System.out.println("origin의 주소값(10진수) : "+origin.hashCode());
 		
-		String formatDate = sdf.format(date);
-		System.out.println(formatDate);
-
+		System.out.println("copy의 주소값          : "+copy);
+		System.out.println("copy의 주소값(10진수)   : "+copy.hashCode());
+		
+		copy[2] = 99;
+		System.out.println("origin 배열 : "+origin[0] +" "+ origin[1] +" "+ origin[2] +" "+ origin[3]);
+		System.out.println("copy 배열   : "+copy[0] +" "+ copy[1] +" "+ copy[2] +" "+ copy[3]);
 	}
 }
