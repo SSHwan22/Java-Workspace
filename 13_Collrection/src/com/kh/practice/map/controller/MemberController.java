@@ -11,56 +11,81 @@ import com.kh.practice.map.model.vo.Member;
 public class MemberController {
 	private HashMap<String, Member> map = new HashMap<>();
 	
+	public HashMap mapTest() {
+		return map;
+		
+	}
+	
 	public boolean joinMembership(String id, Member m) {
-		boolean bool = false;
-		if(!(map.containsKey(id))) {
+		if(map.get(id) == null) {
 			map.put(id, m);
-			bool = true;
-		}else {
-			bool = false;
+			return true;
 		}
-		return bool;
+			return false;
+		
+//		boolean bool = false;
+//		if(!(map.containsKey(id))) {
+//			map.put(id, m);
+//			bool = true;
+//		}else {
+//			bool = false;
+//		}
+//		return bool;
 	}
 	
 	public String login(String id, String password) {
 		String str = null;
-		if(map.containsKey(id)) {
-			if(map.get(id).getPassword().equals(password)) {
-				str = map.get(id).getName();
-			} else {
-				str = null;
-			}
+		
+		if(map.get(id) != null && map.get(id).getPassword().equals(password)) {
+			str = map.get(id).getName();
 		}
+		
+//		if(map.containsKey(id)) {
+//			if(map.get(id).getPassword().equals(password)) {
+//				str = map.get(id).getName();
+//			} else {
+//				str = null;
+//			}
+//		}
 		return str;
 	}
 	
 	public boolean changePassword(String id, String oldPw, String newPw) {
-		boolean bool = false;
-		if(map.containsKey(id)) {
-			if(map.get(id).getPassword().equals(oldPw)) {
-				map.get(id).setPassword(newPw);
-				bool = true;
-			}
+		
+		if(map.get(id) != null && map.get(id).getPassword().equals(oldPw)) {
+			map.get(id).setPassword(newPw);
+			return true;
 		}
-		return bool;
+		return false;
+		
+//		boolean bool = false;
+//		if(map.containsKey(id)) {
+//			if(map.get(id).getPassword().equals(oldPw)) {
+//				map.get(id).setPassword(newPw);
+//				bool = true;
+//			}
+//		}
+//		return bool;
 	}
 	
 	public void changeName(String id, String newName) {
-		if(map.containsKey(id)) {
-			map.get(id).setName(newName);
-		}
-	}
-	public TreeMap sameName(String name) {
-		TreeMap<String, String> tree = new TreeMap<String, String>();
-		Set<String> set = map.keySet();
-		Iterator<String> setIt = set.iterator();
+		map.get(id).setName(newName);
 		
-		while(setIt.hasNext()) {
-			if(map.containsValue(name)) {
-				String key = setIt.next();
+//		if(map.containsKey(id)) {
+//			map.get(id).setName(newName);
+//		}
+	}
+	
+	public TreeMap sameName(String name) {
+		Set<String> set = map.keySet();
+		TreeMap<String, String> tree = new TreeMap();
+		
+		for(String key : set) {
+			if(map.get(key).getName().equals(name)) {
 				tree.put(key, name);
 			}
 		}
+		
 		return tree;
 	}
 }

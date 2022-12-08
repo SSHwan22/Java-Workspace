@@ -1,6 +1,6 @@
-package com.kh.chap01.frame.run;
+package com.kh.chap01_frame.run;
 
-import com.kh.chap01.frame.view.*;
+import com.kh.chap01_frame.view.*;
 
 
 public class Run {

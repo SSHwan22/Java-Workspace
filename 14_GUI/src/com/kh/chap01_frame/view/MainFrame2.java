@@ -1,4 +1,4 @@
-package com.kh.chap01.frame.view;
+package com.kh.chap01_frame.view;
 
 import javax.swing.JFrame;
 
