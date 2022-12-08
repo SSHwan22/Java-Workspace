@@ -72,10 +72,13 @@ public class MusicController {
 		return m;
 	}
 	
+	//방법 2가지
+	//방법 1
 	public int ascTitle() {
-		Collections.sort(list);
+		Collections.sort(list); //정렬
 		return 1;
 	}
+	//방법 2
 	public int descSinger() {
 		Collections.sort(list, new AscTitle());
 		return 1;
