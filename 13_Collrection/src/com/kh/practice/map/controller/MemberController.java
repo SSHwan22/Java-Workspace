@@ -86,6 +86,14 @@ public class MemberController {
 			}
 		}
 		
+//		Iterator<String> SetIt = set.iterator();
+//		while(SetIt.hasNext()) {
+//			String key = SetIt.next();
+//			if(map.get(key).getName().equals(name)) {
+//				tree.put(key, name);
+//			}
+//		}
+		
 		return tree;
 	}
 }

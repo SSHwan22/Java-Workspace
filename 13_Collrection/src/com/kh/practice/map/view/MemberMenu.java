@@ -146,11 +146,17 @@ public class MemberMenu {
 		String name = sc.nextLine();
 		TreeMap tree = mc.sameName(name);
 
-		Set<Entry<String, String>> set = tree.entrySet();
-
-		for (Entry<String, String> e : set) {
+		Set<Entry<String, String>> setEntry = tree.entrySet();
+		
+		for (Entry<String, String> e : setEntry) {
 			System.out.println(e.getValue() + " - " + e.getKey());
 		}
 
+//		Iterator<Entry<String, String>> entryIt = setEntry.iterator();
+//		
+//		while(entryIt.hasNext()) {
+//			Entry<String, String> entry = entryIt.next();
+//			System.out.println(entry.getValue() +" - "+ entry.getKey());
+//		}
 	}
 }
