@@ -1,22 +1,27 @@
 package run;
 
+import java.util.Arrays;
+
 public class Test {
 
 	public static void main(String[] args) {
-		
-		int[] origin = {10, 20, 30, 40};
-		int[] copy = origin;
-		System.out.println("origin 배열 : "+origin[0] +" "+ origin[1] +" "+ origin[2] +" "+ origin[3]);
-		System.out.println("copy 배열   : "+copy[0] +" "+ copy[1] +" "+ copy[2] +" "+ copy[3]);
-		
-		System.out.println("origin의 주소값        : "+origin);
-		System.out.println("origin의 주소값(10진수) : "+origin.hashCode());
-		
-		System.out.println("copy의 주소값          : "+copy);
-		System.out.println("copy의 주소값(10진수)   : "+copy.hashCode());
-		
-		copy[2] = 99;
-		System.out.println("origin 배열 : "+origin[0] +" "+ origin[1] +" "+ origin[2] +" "+ origin[3]);
-		System.out.println("copy 배열   : "+copy[0] +" "+ copy[1] +" "+ copy[2] +" "+ copy[3]);
+
+		// 일차원 배열 선언
+		int[] arr1;
+		int arr2[];
+
+		// 이차원 배열 선언
+		int[][] arr3;
+		int arr4[][];
+		int[] arr5[];
+
+		// 이차원 배열선언과 동시에 할당
+		int[][] arr = new int[2][4];
+
+		System.out.println(arr); // [[I@2a742aa2
+		System.out.println(arr[0]); // [I@3cb1ffe6
+		System.out.println(arr[1]); // [I@3cb1ffe6
+		System.out.println(Arrays.toString(arr[0]));
+		System.out.println(arr[0][0]); // 0
 	}
 }

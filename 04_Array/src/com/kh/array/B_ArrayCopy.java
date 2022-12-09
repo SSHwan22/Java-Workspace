@@ -83,7 +83,7 @@ public class B_ArrayCopy {
 	
 	// 자바에서 제공하는 다양한 메서드 사용해서 배열을 복사
 	public void method3() {
-		// 2. 새로운 배열을 생성한 후 System클래스에서 array copy메서드를 이용
+		// 2. 새로운 배열을 생성한 후 System클래스에서 arrayqcopy메서드를 이용
 		
 		int[] origin = {1,2,3,4,5};
 		

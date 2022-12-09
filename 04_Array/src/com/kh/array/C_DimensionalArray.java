@@ -22,6 +22,7 @@ public class C_DimensionalArray {
 
 		System.out.println(arr); // [[I@2a742aa2
 		System.out.println(arr[0]); // [I@3cb1ffe6
+		System.out.println(arr[1]); // [I@3cb1ffe6
 		System.out.println(Arrays.toString(arr[0]));
 		System.out.println(arr[0][0]); // 0
 

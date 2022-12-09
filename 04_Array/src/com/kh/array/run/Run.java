@@ -29,11 +29,11 @@ public class Run {
 //		ba.method4();
 //		ba.method5();
 		
-//		cd.method1();
+		cd.method1();
 //		cd.method2();
 //		cd.method3();
 //		cd.method5();
 //		cd.method6();
-		cd.method7();
+//		cd.method7();
 	}
 }
