@@ -25,4 +25,9 @@ public class SmartPhone extends Product{
 	public String information() {
 		return super.information()+", mobileAgency : "+mobileAgency;
 	}
+	
+	public String toString() {
+		return super.brand + super.pName+ super.price + mobileAgency;
+		
+	}
 }
